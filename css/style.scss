@@ -2,6 +2,7 @@
 @use './sass/colors';
 @use './sass/layout';
 @use './sass/spacing';
+@use './sass/menu';
 @use './sass/typography';
 
 *{
@@ -17,7 +18,7 @@ html{
 body{
   width: 100%;
 
-  background-color: colors.$white-normal;
+  background-color: #0B0B0B;
 
   &::-webkit-scrollbar{
     padding-right: 4px;
@@ -45,6 +46,12 @@ body{
 
 .block{
   display: block;
+}
+
+.disappear{
+  @include layout.responsive(s) {
+    display: none;
+  }
 }
 
 .hidden{
