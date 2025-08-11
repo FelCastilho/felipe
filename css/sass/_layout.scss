@@ -157,6 +157,13 @@ $container-s: 540px;
 
 .project-list{
   margin-top: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+
+  @include responsive(s) {
+    gap: 80px;
+  }
 }
 
 .project{
@@ -164,15 +171,23 @@ $container-s: 540px;
   align-items: center;
   justify-content: center;
   gap: 66px;
-
   
   @include responsive(s) {
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
   }
+}
+
+.img-project{
+  border-radius: 18px;
 }
 
 .project-list-techs{
   display: flex;
   gap: 32px;
+  margin-top: 18px;
+}
+
+.img-project {
+  width: 100%;
 }
