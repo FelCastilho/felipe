@@ -140,5 +140,39 @@ $container-s: 540px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  h1{
+    text-align: center;
+  }
 }
 
+.projects{
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-list{
+  margin-top: 128px;
+}
+
+.project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 66px;
+
+  
+  @include responsive(s) {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.project-list-techs{
+  display: flex;
+  gap: 32px;
+}

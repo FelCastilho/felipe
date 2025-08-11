@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -94,6 +95,39 @@
   justify-content: center;
   align-items: center;
 }
+.hero h1 {
+  text-align: center;
+}
+
+.projects {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-list {
+  margin-top: 128px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 66px;
+}
+@media screen and (max-width: 960px) {
+  .project {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.project-list-techs {
+  display: flex;
+  gap: 32px;
+}
 
 .s-0 {
   margin: 0;
@@ -109,7 +143,7 @@
 }
 
 .m-3 {
-  margin: 48px;
+  margin: 36px;
 }
 
 .m-4 {
@@ -129,7 +163,7 @@
 }
 
 .mt-3 {
-  margin-top: 48px;
+  margin-top: 36px;
 }
 
 .mt-4 {
@@ -149,7 +183,7 @@
 }
 
 .ml-3 {
-  margin-left: 48px;
+  margin-left: 36px;
 }
 
 .ml-4 {
@@ -169,7 +203,7 @@
 }
 
 .mr-3 {
-  margin-right: 48px;
+  margin-right: 36px;
 }
 
 .mr-4 {
@@ -189,7 +223,7 @@
 }
 
 .mb-3 {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .mb-4 {
@@ -211,8 +245,8 @@
 }
 
 .mx-3 {
-  margin-left: 48px;
-  margin-right: 48px;
+  margin-left: 36px;
+  margin-right: 36px;
 }
 
 .mx-4 {
@@ -236,8 +270,8 @@
 }
 
 .my-3 {
-  margin-top: 48px;
-  margin-bottom: 48px;
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 
 .my-4 {
@@ -259,7 +293,7 @@
 }
 
 .p-3 {
-  padding: 48px;
+  padding: 36px;
 }
 
 .p-4 {
@@ -279,7 +313,7 @@
 }
 
 .pt-3 {
-  padding-top: 48px;
+  padding-top: 36px;
 }
 
 .pt-4 {
@@ -299,7 +333,7 @@
 }
 
 .pl-3 {
-  padding-left: 48px;
+  padding-left: 36px;
 }
 
 .pl-4 {
@@ -319,7 +353,7 @@
 }
 
 .pr-3 {
-  padding-right: 48px;
+  padding-right: 36px;
 }
 
 .pr-4 {
@@ -339,7 +373,7 @@
 }
 
 .pb-3 {
-  padding-bottom: 48px;
+  padding-bottom: 36px;
 }
 
 .pb-4 {
@@ -361,8 +395,8 @@
 }
 
 .px-3 {
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 36px;
+  padding-right: 36px;
 }
 
 .px-4 {
@@ -386,8 +420,8 @@
 }
 
 .py-3 {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .py-4 {
@@ -403,14 +437,14 @@
 .h0 {
   color: white;
   font-weight: 400;
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 68px;
   line-height: 100%;
   font-weight: 600;
 }
 @media screen and (max-width: 960px) {
   .h0 {
-    font-family: "Inter", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 36px;
     line-height: 100%;
     font-weight: 600;
@@ -419,55 +453,57 @@
 
 h1 {
   color: white;
-  font-family: "Inter", sans-serif;
-  font-size: 36px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
   line-height: 100%;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   h1 {
-    font-family: "Inter", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 32px;
     line-height: 100%;
   }
 }
 
 h2 {
-  color: black;
-  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
   font-size: 32px;
   line-height: 120%;
 }
 @media screen and (max-width: 960px) {
   h2 {
-    font-family: "Inter", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 28px;
     line-height: 120%;
   }
 }
 
 h3 {
-  color: black;
-  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
   font-size: 24px;
   line-height: 130%;
 }
 @media screen and (max-width: 960px) {
   h3 {
-    font-family: "Inter", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 20px;
     line-height: 130%;
   }
 }
 
 h4 {
-  color: black;
-  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
   font-size: 18px;
   line-height: 140%;
 }
 @media screen and (max-width: 960px) {
   h4 {
-    font-family: "Inter", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 16px;
     line-height: 140%;
   }
@@ -475,27 +511,40 @@ h4 {
 
 h5 {
   text-transform: uppercase;
-  letter-spacing: 28%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  letter-spacing: 0.5rem;
+  color: #AFAFAF;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
   line-height: 150%;
 }
 @media screen and (max-width: 960px) {
   h5 {
-    font-family: "Inter", sans-serif;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #AFAFAF;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+}
+@media screen and (max-width: 960px) {
+  h5 {
+    font-family: "DM Sans", sans-serif;
     font-size: 14px;
     line-height: 150%;
   }
 }
 
 p {
-  color: #646465;
+  color: #AFAFAF;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 140%;
 }
 @media screen and (max-width: 960px) {
@@ -506,6 +555,11 @@ p {
   }
 }
 
+.highlight-text {
+  color: white;
+  font-weight: 600;
+}
+
 .bold {
   font-weight: bold;
   color: #1A1C15;
@@ -514,7 +568,7 @@ p {
 strong {
   color: black;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 140%;
 }
 @media screen and (max-width: 960px) {
@@ -533,6 +587,13 @@ strong {
   text-align: center;
 }
 
+.container-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
   width: 100%;
   height: 10vh;
@@ -542,6 +603,9 @@ header {
   transform: translate(50%, 0%);
   z-index: 800;
   transition: 0.5s ease;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
 }
 
 .active-header {
@@ -580,6 +644,10 @@ header {
   }
 }
 
+.navbar-desktop a {
+  text-decoration: none;
+}
+
 .navbar-desktop-item-1 {
   flex: 1 1 auto;
   height: 100%;
@@ -594,6 +662,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.navbar-desktop {
+  border-bottom: 2px solid #151515;
 }
 
 .navbar-desktop-item-3 {
@@ -622,6 +694,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 56px;
 }
 .menu-desktop .menu-item {
   position: relative;
@@ -697,7 +770,7 @@ header {
   transition: 0.5s ease;
   width: 0%;
   height: 2px;
-  background-color: #D2F988;
+  background-color: red;
 }
 .nav-link-dropdown:hover::after {
   width: 100%;
@@ -819,7 +892,7 @@ header {
 .nav-link-mobile {
   display: inline-block;
   color: #247BFF;
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 24px;
   line-height: 130%;
   padding: 16px 24px;
@@ -837,6 +910,47 @@ header {
 }
 .nav-link-mobile:hover::after {
   width: 100%;
+}
+
+.btn-projeto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: "DM Sans", sans-serif;
+  padding: 0.7em 2em;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s ease all;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn-projeto .icon {
+  width: 1.2em;
+  height: 1.2em;
+  transition: transform 0.4s ease;
+}
+
+.btn-projeto:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-projeto:hover .icon {
+  transform: translateX(5px);
+}
+
+.btn-projeto .text {
+  display: inline-block;
 }
 
 * {
@@ -889,8 +1003,4 @@ body::-webkit-scrollbar-thumb {
 
 .relative {
   position: relative;
-}
-
-svg, img {
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */

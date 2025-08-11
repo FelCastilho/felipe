@@ -2,9 +2,10 @@
 @use 'colors';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @mixin typeface-1($size, $device: desktop) {
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
 
   @if $size ==h0 and $device ==desktop {
     font-size: 68px;
@@ -19,8 +20,9 @@
   }
 
   @else if $size ==h1 and $device ==desktop {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 100%;
+    font-weight: 500;
   }
 
   @else if $size ==h1 and $device ==mobile {
@@ -59,7 +61,7 @@
   }
 
   @else if $size ==h5 and $device ==desktop {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 150%;
   }
 
@@ -84,7 +86,7 @@
   }
 
   @else if $size ==p2 and $device ==desktop {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 140%;
   }
 
@@ -124,7 +126,7 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: #fff;
   @include typeface-1(h2, desktop);
 
   @include layout.responsive(s) {
@@ -133,7 +135,7 @@ h2 {
 }
 
 h3 {
-  color: black;
+  color: #fff;
   @include typeface-1(h3, desktop);
 
   @include layout.responsive(s) {
@@ -142,7 +144,8 @@ h3 {
 }
 
 h4 {
-  color: black;
+  color: #fff;
+  font-weight: 400;
   @include typeface-1(h4, desktop);
 
   @include layout.responsive(s) {
@@ -152,11 +155,22 @@ h4 {
 
 h5 {
   text-transform: uppercase;
-  letter-spacing: 28%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  letter-spacing: 0.5rem;
+
+  color: #AFAFAF;
+
+  @include typeface-1(h5, desktop);
+
+  @include layout.responsive(s) {
+    @include typeface-1(h5, mobile);
+  }
+}
+
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+
+  color: #AFAFAF;
 
   @include typeface-1(h5, desktop);
 
@@ -166,12 +180,17 @@ h5 {
 }
 
 p {
-  color: colors.$gray-4;
+  color: #AFAFAF;
   @include typeface-2(p2, desktop);
 
   @include layout.responsive(s) {
     @include typeface-2(p2, mobile);
   }
+}
+
+.highlight-text{
+  color: white;
+  font-weight: 600;
 }
 
 .bold {
@@ -194,4 +213,11 @@ strong {
 
 .text-center {
   text-align: center;
+}
+
+.container-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
