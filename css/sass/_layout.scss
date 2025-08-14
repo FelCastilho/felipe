@@ -138,6 +138,7 @@ $container-s: 540px;
 .hero{
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -178,8 +179,23 @@ $container-s: 540px;
   }
 }
 
-.img-project{
-  border-radius: 18px;
+// EFEITO DE ZOOM IN 
+
+.project > div:first-child {
+  overflow: hidden;
+  border-radius: 18px; 
+}
+
+.img-project {
+  transition: transform 1s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.project > div:first-child:hover .img-project {
+  transform: scale(1.1);
 }
 
 .project-list-techs{
