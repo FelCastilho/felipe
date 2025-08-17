@@ -207,3 +207,17 @@ $container-s: 540px;
 .img-project {
   width: 100%;
 }
+
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 32px;
+}
