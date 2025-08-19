@@ -60,33 +60,36 @@
                 <ul class="menu-desktop">
 
                     <li class="menu-item">
-                        <a href="https://mcco.com.br/" class="nav-link-desktop">Início</a>
+                        <a href="#hero" class="nav-link-desktop">Início</a>
                     </li>
 
                     <!-- Dropdown Menu -->
                     <li class="menu-item" id="menu-item">
 
-                        <a href="#" class="nav-link-desktop nav-link-menu-dropdown">Projetos</a>
+                        <a href="#projects" class="nav-link-desktop nav-link-menu-dropdown">Projetos</a>
 
                         <ul class="dropdown-menu" id="dropdown-item">
 
                             <li class="dropdown-item">
-                                <a href="#mcco" class="nav-link-dropdown">Construtora MCCO</a>
+                                <a href="https://mcco-psi.vercel.app/" class="nav-link-dropdown"
+                                    target="_blank">Construtora MCCO</a>
                             </li>
 
                             <li class="dropdown-item">
-                                <a href="#mariana-solano" class="nav-link-dropdown">Mariana Solano</a>
+                                <a href="https://marianasolano.com.br/" class="nav-link-dropdown"
+                                    target="_blank">Mariana Solano</a>
                             </li>
 
                             <li class="dropdown-item">
-                                <a href="#gelcamp" class="nav-link-dropdown">Gelcamp Engenharia</a>
+                                <a href="https://gelcampengenharia.com.br/" class="nav-link-dropdown"
+                                    target="_blank">Gelcamp Engenharia</a>
                             </li>
 
                         </ul>
                     </li>
 
                     <li class="menu-item">
-                        <a href="https://mcco.com.br/portfolio/" class="nav-link-desktop">Contato</a>
+                        <a href="#contato" class="nav-link-desktop">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -96,10 +99,9 @@
         <!-- MOBILE -->
         <nav class="menu-mobile" id="menu-mobile">
             <ul class="nav-list-mobile">
-                <li><a href="https://mcco.com.br/" class="nav-link-mobile">Início</a></li>
-                <li><a href="https://mcco.com.br/quem-somos/" class="nav-link-mobile">Somos a MCCO</a></li>
-                <li><a href="https://mcco.com.br/servicos/" class="nav-link-mobile">Serviços</a></li>
-                <li><a href="https://mcco.com.br/portfolio/" class="nav-link-mobile">Portfólio</a></li>
+                <li><a href="#hero" class="nav-link-mobile">Início</a></li>
+                <li><a href="#projects" class="nav-link-mobile">Projetos</a></li>
+                <li><a href="#contato" class="nav-link-mobile">Contato</a></li>
             </ul>
         </nav>
 
@@ -107,32 +109,35 @@
 
     <main>
 
-        <section class="container hero">
-            <h1 class="h0">Transformo ideias em <br class="disappear"> <span class="highlight-title">experiências</span>
+        <section class="container hero" id="hero">
+            <h1 class="h0" id="hero-title">Transformo ideias em <br class="disappear"> <span
+                    class="highlight-title">experiências</span>
                 digitais.</h1>
             <p class="p2 text-center mt-2">Sou web designer apaixonado em desenhar jornadas digitais que <br
                     class="disappear"> unem <span class="highlight-text">estética</span>, <span
                     class="highlight-text">funcionalidade</span> e <span class="highlight-text">propósito</span>. </p>
             <div class="btn-hero mt-3">
-                <button class="animated-button">
-                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-                        </path>
-                    </svg>
-                    <span class="text">Transforme sua ideia agora</span>
-                    <span class="circle"></span>
-                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-                        </path>
-                    </svg>
-                </button>
-
+                <a
+                    href="https://api.whatsapp.com/send?phone=5521981610033&text=Ol%C3%A1!%20Estou%20no%20site%20e%20quero%20transformar%20minha%20marca%20em%20uma%20experi%C3%AAncia!">
+                    <button class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
+                        </svg>
+                        <span class="text">Transforme sua ideia agora</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
+                        </svg>
+                    </button>
+                </a>
             </div>
         </section>
 
-        <section class="container projects">
+        <section class="container projects" id="projects">
             <div class="container-title">
                 <h5>MEUS PROJETOS</h5>
                 <h1>Projetos que <span class="highlight-title">ganharam</span> forma:</h1>
@@ -162,7 +167,7 @@
                             <img src="svg/js-icon.svg" alt="Logo Javascript">
                             <img src="svg/figma-icon.svg" alt="Logo Figma">
                         </div>
-                        <a href="https://mcco-psi.vercel.app/" class="btn-projeto mt-3">
+                        <a href="https://mcco-psi.vercel.app/" class="btn-projeto mt-3" target="_blank">
                             <span class="text">Ver projeto</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="icon">
@@ -174,7 +179,7 @@
                 </div>
 
                 <!--- Mariana Solano --->
-                <div class="project">
+                <div class="project" id="mariana-solano">
 
                     <div>
                         <img src="img/mariana-solano1.jpg" alt="Site Mariana Solano" class="img-project">
@@ -196,7 +201,7 @@
                             <img src="svg/wordpress-icon.svg" alt="Logo Wordpress">
                             <img src="svg/elementor-icon.svg" alt="Logo Elementor">
                         </div>
-                        <a href="https://marianasolano.com.br/" class="btn-projeto mt-3">
+                        <a href="https://marianasolano.com.br/" class="btn-projeto mt-3" target="_blank">
                             <span class="text">Ver projeto</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="icon">
@@ -227,7 +232,7 @@
                             <img src="svg/wordpress-icon.svg" alt="Logo Wordpress">
                             <img src="svg/elementor-icon.svg" alt="Logo Elementor">
                         </div>
-                        <a href="https://gelcampengenharia.com.br/" class="btn-projeto mt-3">
+                        <a href="https://gelcampengenharia.com.br/" class="btn-projeto mt-3" target="_blank">
                             <span class="text">Ver projeto</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="icon">
@@ -241,20 +246,21 @@
 
         </section>
 
-        <footer>
+        <footer id="contato">
             <div class="container footer-container">
                 <p>&copy; 2025 Felipe Castilho. Todos os direitos reservados.</p>
                 <div class="footer-icons">
-                    <a href="#">
+                    <a href="https://api.whatsapp.com/send?phone=5521981610033&text=Ol%C3%A1!%20Estou%20no%20site%20e%20quero%20transformar%20minha%20marca%20em%20uma%20experi%C3%AAncia!"
+                        target="_blank">
                         <img src="svg/whatsapp.svg" alt="Icone whatsapp">
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/felipec_castilho/" target="_blank">
                         <img src="svg/instagram.svg" alt="Icone instagram">
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/felipe-coutinho-/" target="_blank">
                         <img src="svg/Linkedin.svg" alt="Icone Linkedin">
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/FelCastilho" target="_blank">
                         <img src="svg/Github.svg" alt="Icone Github">
                     </a>
                 </div>
@@ -262,7 +268,15 @@
         </footer>
     </main>
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
     <script src="js/script.js"></script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>

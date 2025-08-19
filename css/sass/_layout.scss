@@ -172,7 +172,7 @@ $container-s: 540px;
   align-items: center;
   justify-content: center;
   gap: 66px;
-  
+
   @include responsive(s) {
     flex-direction: column;
     gap: 16px;

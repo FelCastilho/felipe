@@ -36,3 +36,17 @@ function scrollHeader() {
 }
 
 window.addEventListener("scroll", scrollHeader);
+
+// GSAP ANIMATIONS
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.from("#hero-title", {
+  y: -50,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+
