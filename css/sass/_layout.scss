@@ -172,7 +172,7 @@ $container-s: 540px;
   justify-content: center;
   gap: 66px;
 
-  height: 80vh;
+  height: 100vh;
 
   @include responsive(s) {
     flex-direction: column;
@@ -208,7 +208,6 @@ $container-s: 540px;
 .img-project {
   width: 100%;
 }
-
 
 .footer-container{
   display: flex;

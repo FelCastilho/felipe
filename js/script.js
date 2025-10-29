@@ -105,7 +105,6 @@ gsap.fromTo("#mcco", {
     start: "top 90%",
     end: "bottom 10%",
     scrub: true,
-    markers: true,
   }
 })
 
@@ -120,7 +119,6 @@ gsap.fromTo("#mariana-solano", {
     start: "top 90%",
     end: "bottom 100%",
     scrub: true,
-    markers: true,
   }
 })
 
@@ -134,8 +132,6 @@ gsap.fromTo("#gelcamp-engenharia", {
     trigger: "#gelcamp-engenharia",
     start: "top 90%",
     end: "bottom 100%",
-    scrub: true,
-    markers: true,
   }
 })
 
